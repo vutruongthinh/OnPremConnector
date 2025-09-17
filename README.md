@@ -96,3 +96,38 @@ terraform destroy
 - Services are only accessible through private endpoints
 - Network security groups can be added for additional security
 - Consider implementing Azure Bastion for secure VM access
+
+Tuan 15 -  21/9:
+    - 
+    - Proff 
+Tuan 22-28/9: Phase 1 Milestone - MVP
+    - So bo hoan thanh Infra tren Azure
+    - Cai dat ha tang can thiet on-prem
+    - Hoan thanh giao dien frontend + ket noi voi backend
+    - Demo chatbot voi bo test docs (host tren Azure)
+    - Tap trung vao 2 cau hoi 
+    
+Du kien muc tieu Phase 2 (den 30/10):
+    - Hoan thanh thiet lap ket noi onprem - Azure cho 2 luong: upload va user query
+    - Hoan thanh xay dung infra can thiet onprem.
+    - Xu ly luong bao cao thuc. Luu tru du lieu da qua xu ly vao onprem database va Azure AI search
+    - Fine-tune chatbot de dua ra cau tra loi chinh xac hon
+    - Ra soat cac phuong an security
+    - QA testing
+
+Onprem:
+    - Phu trach chinh: Thang + Thinh
+    - Tien do hien tai: da nhan VPN tu KTNN/ chunker code da co tren github
+    - Cac task tiep theo:
+        - Phan tich ha tang can cai dat onPrem va do kha thi: 
+            Postgres DB (schema/install sql code)?
+            Runtime can thiet de chay chunker?
+            Tai khoan service account de chay process onprem? Cac permissions can thiet cho account nay?
+            Mo 1 firewall inbound port de nhan GET request tu user query?
+        - Test connectivity tu onprem <-> Azure:
+            Upload flow: POST request tu Onprem -> Azure, xac nhan code 200 OK
+            Query flow: GET request tu Azure -> Onprem, xac nhan code 200 OK
+        - 
+
+
+     
